@@ -1,0 +1,5 @@
+#!/usr/bin/zsh
+# GUI Timer
+# Note: should work just fine for /usr/bin/bash
+echo "timer set for $1"
+(sleep $1 && zenity --info --title="Timer" --text="${*:-BING}") 
